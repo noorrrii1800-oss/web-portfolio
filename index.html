@@ -13,12 +13,14 @@
     <nav class="bg-[#14120f]/90 backdrop-blur-md sticky top-0 z-50 border-b border-stone-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <div class="text-2xl font-serif tracking-widest text-amber-500 font-bold">SAVORY<span class="text-white">.</span></div>
+            
+            <!-- Updated Live Navigation Links -->
             <div class="hidden md:flex space-x-8 text-sm uppercase tracking-widest font-medium">
-                <a href="#hero" class="hover:text-amber-500 transition">Home</a>
-                <a href="#about" class="hover:text-amber-500 transition">Our Story</a>
-                <a href="#services" class="hover:text-amber-500 transition">Menu & Services</a>
-                <a href="#contact" class="hover:text-amber-500 transition">Reservations</a>
+                <a href="#hero" class="text-amber-500 font-bold border-b border-amber-500 pb-1">Restaurant (Home)</a>
+                <a href="gym.html" class="hover:text-orange-400 text-orange-500 transition font-bold">🔥 Gym Demo</a>
+                <a href="realestate.html" class="hover:text-blue-400 text-blue-500 transition font-bold">🏢 Real Estate Demo</a>
             </div>
+            
             <a href="#contact" class="border border-amber-500 hover:bg-amber-500 hover:text-black text-amber-500 transition px-5 py-2.5 text-xs uppercase tracking-widest font-semibold rounded-none">Book A Table</a>
         </div>
     </nav>
@@ -33,9 +35,15 @@
             <p class="text-stone-400 text-base sm:text-lg mb-10 max-w-xl mx-auto font-light leading-relaxed">
                 Experience an unforgettable journey of authentic tastes, fresh organic ingredients, and masterclass culinary artistry.
             </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#services" class="bg-amber-500 hover:bg-amber-600 text-black font-semibold px-8 py-3.5 uppercase tracking-wider text-xs transition">Explore Our Menu</a>
-                <a href="#about" class="border border-stone-500 hover:border-white text-white font-semibold px-8 py-3.5 uppercase tracking-wider text-xs transition">Discover Story</a>
+            
+            <!-- Updated Hero Action Buttons for Portfolio Shortcuts -->
+            <div class="flex flex-col sm:flex-row justify-center gap-4 bg-stone-950/60 p-6 rounded-lg border border-stone-800/50 backdrop-blur-sm">
+                <a href="gym.html" class="bg-orange-500 hover:bg-orange-600 text-black font-bold px-8 py-3.5 uppercase tracking-wider text-xs transition duration-200">
+                    Explore Gym Project →
+                </a>
+                <a href="realestate.html" class="bg-blue-600 hover:bg-blue-700 text-white font-bold px-8 py-3.5 uppercase tracking-wider text-xs transition duration-200">
+                    Explore Real Estate Project →
+                </a>
             </div>
         </div>
     </section>
@@ -102,7 +110,7 @@
             <h2 class="text-3xl sm:text-4xl font-serif text-white mb-4 font-normal">Secure Your Table</h2>
             <p class="text-stone-400 text-sm font-light mb-10">Due to high demand, we recommend booking your slot at least 24 hours in advance.</p>
             
-            <form class="space-y-6 text-left border border-stone-800 p-8 sm:p-10 bg-[#0f0e0c]">
+            <form class="space-y-6 text-left border border-stone-800 p-8 sm:p-10 bg-[#0f0e0c]" onsubmit="event.preventDefault();">
                 <div>
                     <label class="block text-[10px] uppercase tracking-widest font-semibold text-stone-400 mb-2">Your Name</label>
                     <input type="text" required placeholder="E.g., Noor Fatima" class="w-full bg-[#14120f] border border-stone-800 px-4 py-3 text-sm focus:outline-none focus:border-amber-500 text-white transition-all">
